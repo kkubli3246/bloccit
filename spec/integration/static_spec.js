@@ -20,4 +20,14 @@ describe("routes : static", () => {
     });
 
   });
+
+  describe("GET /marco", () => {
+    it("should return \' polo\' in body and 200 status Code",(done)=>{
+        request.get(base + "marco", (err, res, body)=>{
+            expect(res.statusCode).toBe(200);
+
+            done();
+        })
+    });
+  });
 });
