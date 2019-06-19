@@ -59,6 +59,7 @@ describe("Post", () => {
         done();
       });
     });
+    
     it("should not create a post with missing title, body, or assigned topic", (done) => {
       Post.create({
         title: "Pros of Cryosleep during the long journey"
