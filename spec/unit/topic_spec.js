@@ -79,6 +79,7 @@ describe("Topic", ()=>{
         .then((post) =>{
             this.topic.getPosts()
             .then((posts) => {
+                posts.push(post);
                 expect(posts.length).toBe(3);
                 posts.forEach(element => {
                     console.log(element.title)
