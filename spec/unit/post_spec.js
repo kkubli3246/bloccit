@@ -16,7 +16,7 @@ describe("Post", () => {
         description: "A compilation of reports from recent visits to the star system."
       })
       .then((topic) => {
-        this.topic = topic;
+        this.topic = topic
 //#3
         Post.create({
           title: "My first visit to Proxima Centauri b",
